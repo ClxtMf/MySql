@@ -1,0 +1,10 @@
+CREATE DATABASE escola
+----------------------
+USE escola;
+
+CREATE TABLE professores(
+-- nome da coluna tipo da coluna atributos
+matricula INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(45) NOT NULL,
+salario FLOAT(8,2) NOT NULL
+);
