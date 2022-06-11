@@ -1,0 +1,15 @@
+CREATE DATABASE Editora;
+
+USE editora;
+
+CREATE TABLE autores(
+id_autor INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(25) NOT NULL
+);
+
+CREATE TABLE livros(
+id_livros INT PRIMARY KEY AUTO_INCREMENT,
+titulo VARCHAR(35) NOT NULL,
+fk_autor INT,
+FOREIGN KEY (fk_autor) REFERENCES autor (id_autor)
+);
